@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تأسیسات‌یار</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Tahoma, Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: #f3f6f9;
+      color: #17202a;
+    }
+
+    header {
+      background: #087f8c;
+      color: white;
+      padding: 25px 18px;
+      text-align: center;
+      border-radius: 0 0 25px 25px;
+    }
+
+    header h1 {
+      margin: 0 0 8px;
+      font-size: 28px;
+    }
+
+    header p {
+      margin: 0;
+      font-size: 15px;
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .title {
+      font-size: 21px;
+      font-weight: bold;
+      margin: 10px 0 15px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px 10px;
+      text-align: center;
+      border-radius: 18px;
+      box-shadow: 0 3px 12px rgba(0,0,0,.08);
+      cursor: pointer;
+      transition: .2s;
+    }
+
+    .card:active {
+      transform: scale(.96);
+    }
+
+    .icon {
+      font-size: 38px;
+      margin-bottom: 8px;
+    }
+
+    .card h3 {
+      margin: 5px 0;
+      font-size: 17px;
+    }
+
+    .card p {
+      color: #777;
+      font-size: 12px;
+      margin: 5px 0;
+    }
+
+    .request {
+      background: white;
+      margin-top: 22px;
+      padding: 20px;
+      border-radius: 18px;
+      box-shadow: 0 3px 12px rgba(0,0,0,.08);
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 13px;
+      margin: 7px 0;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      font-size: 14px;
+    }
+
+    textarea {
+      height: 90px;
+      resize: none;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      border: none;
+      border-radius: 12px;
+      background: #087f8c;
+      color: white;
+      font-size: 17px;
+      cursor: pointer;
+      margin-top: 8px;
+    }
+
+    .phone {
+      display: block;
+      text-align: center;
+      background: #17202a;
+      color: white;
+      padding: 15px;
+      border-radius: 12px;
+      text-decoration: none;
+      margin-top: 15px;
+    }
+
+    footer {
+      text-align: center;
+      color: #777;
+      padding: 25px 10px;
+      font-size: 12px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>🔧 تأسیسات‌یار</h1>
+  <p>خدمات تأسیسات و تعمیرات در یکجا</p>
+</header>
+
+<div class="container">
+
+  <div class="title">خدمات ما</div>
+
+  <div class="services">
+
+    <div class="card" onclick="selectService('لوله‌کشی')">
+      <div class="icon">🚰</div>
+      <h3>لوله‌کشی</h3>
+      <p>رفع نشتی و تعمیرات</p>
+    </div>
+
+    <div class="card" onclick="selectService('پکیج')">
+      <div class="icon">🔥</div>
+      <h3>پکیج</h3>
+      <p>تعمیر و سرویس</p>
+    </div>
+
+    <div class="card" onclick="selectService('کولر و تهویه')">
+      <div class="icon">❄️</div>
+      <h3>کولر و ته
